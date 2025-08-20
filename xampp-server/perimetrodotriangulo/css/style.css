@@ -14,7 +14,7 @@ body {
     background-color: #d0d0f8;
 }
 
-form {
+form, #resultado {
     display: flex;
     width: 60vw;
     margin: auto;
