@@ -11,8 +11,8 @@
     <h2>Resultado</h2>
  
     <?php
-    if (isset($_POST['celsius'])) {
-        $celsius = $_POST['celsius'];
+    if (isset($_GET['celsius'])) {
+        $celsius = $_GET['celsius'];
  
         
         if (is_numeric($celsius)) {            
