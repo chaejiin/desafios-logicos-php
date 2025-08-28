@@ -1,0 +1,108 @@
+/* ----------------------------------------------------------
+Estética: Retrô Gótica / Toxic Vaporwave
+Inspirado nas páginas da web dos anos 90/2000 (ex: https://datoxicwaltz.neocities.org/)
+Objetivo: Criar uma experiência imersiva que mistura
+          terror digital retrô, underground e cyber-gótico.
+---------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background: url('https://i.pinimg.com/originals/8d/09/84/8d098468ef8b1179368b7f08e06d3599.gif') repeat; /* use um GIF/PNG animado estilo plasma */
+    color: #00ff66;
+    text-shadow: 0 0 8px #00ff66, 0 0 15px #00cc55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    border: 3px solid #00ff66;
+    border-radius: 10px;
+    padding: 30px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 0 25px #00ff66, inset 0 0 20px #003311;
+    font-size: 16px;
+    animation: flicker 2s infinite alternate;
+}
+
+
+h2 {
+    font-family: "Creepster", cursive; 
+    color: #ff0033;
+    text-shadow: 0 0 10px #ff0033, 0 0 20px #ff3366;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #00ff66;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: black;
+    border: 2px solid #00ff66;
+    border-radius: 6px;
+    color: #00ff66;
+    font-family: monospace;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: black;
+    border: 2px solid #ff0033;
+    border-radius: 6px;
+    color: #ff0033;
+    font-size: 18px;
+    font-family: "Creepster", cursive;
+    cursor: pointer;
+    text-shadow: 0 0 8px #ff0033;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #ff0033;
+    color: black;
+    text-shadow: 0 0 12px black;
+}
+
+
+.success {
+    color: #00ff66;
+    text-shadow: 0 0 10px #00ff66;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0033;
+    text-shadow: 0 0 10px #ff0033;
+    font-weight: bold;
+}
+
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    45% { opacity: 0.95; }
+    46% { opacity: 0.8; }
+    50% { opacity: 0.9; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Flowgorithm_ClienteVip"/>
+        <attribute name="authors" value="rafael.jtgrangeiro"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-26 02:56:44 "/>
+        <attribute name="created" value="cmFmYWVsLmp0Z3JhbmdlaXJvO1NBTjA3MTc0NjNXMTEtMTsyMDI1LTA4LTI2OyIwMTo1NTo1NSAiOzM5MTU="/>
+        <attribute name="edited" value="cmFmYWVsLmp0Z3JhbmdlaXJvO1NBTjA3MTc0NjNXMTEtMTsyMDI1LTA4LTI2OyIwMjo1Njo0NCAiOzE7NDAyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, tipocliente" type="String" array="False" size=""/>
+            <declare name="valorcompra, valorpagar" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do cliente&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite o valor da compra&quot;" newline="True"/>
+            <input variable="valorcompra"/>
+            <output expression="&quot;O cliente &#233; 'comum' ou 'vip'? &quot;" newline="True"/>
+            <input variable="tipocliente"/>
+            <if expression="tipocliente == &quot;vip&quot;">
+                <then>
+                    <assign variable="valorpagar" expression="valorcompra - (valorcompra * 0.10)"/>
+                    <output expression="&quot;O valor total a pagar &#233; &quot; &amp; valorpagar" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua compra n&#227;o ter&#225; desconto&quot;" newline="True"/>
+                    <output expression="&quot;O valor a pagar &#233; &quot; &amp; valorcompra" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

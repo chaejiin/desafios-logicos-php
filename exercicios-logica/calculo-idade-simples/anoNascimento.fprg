@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="anoNascimento"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-27 02:40:30 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0yNzsiMDI6MTg6MTYgIjszNjk2"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOC0yNzsiMDI6NDA6MzAgIjsxOzM3OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="datanascimento, idade" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite ano de nascimento&quot;" newline="True"/>
+            <input variable="datanascimento"/>
+            <assign variable="idade" expression="2025 - datanascimento"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="nome &amp; &quot; sua idade &#233; &quot; &amp; idade &amp; &quot; voc&#234; &#233; maior de idade&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome &amp; &quot; sua idade &#233; &quot; &amp; idade &amp; &quot; voc&#234; &#233; menor de idade&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
