@@ -13,7 +13,7 @@ Objetivo: Criar uma experiência imersiva que mistura
 
 body {
     font-family: "Courier New", monospace;
-    background: url('https://i.pinimg.com/originals/8d/09/84/8d098468ef8b1179368b7f08e06d3599.gif') repeat; /* use um GIF/PNG animado estilo plasma */
+    background: url('https://i.pinimg.com/originals/8d/09/84/8d098468ef8b1179368b7f08e06d3599.gif') repeat; 
     color: #00ff66;
     text-shadow: 0 0 8px #00ff66, 0 0 15px #00cc55;
     display: flex;
@@ -105,4 +105,28 @@ button:hover {
     46% { opacity: 0.8; }
     50% { opacity: 0.9; }
     100% { opacity: 1; }
+}
+
+
+a.button-link {
+  display: block; 
+  text-decoration: none; 
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: black;
+  border: 2px solid #ff0033;
+  border-radius: 6px;
+  color: #ff0033;
+  font-size: 18px;
+  font-family: "Creepster", cursive;
+  cursor: pointer;
+  text-shadow: 0 0 8px #ff0033;
+  transition: all 0.3s;
+}
+
+a.button-link:hover {
+  background: #ff0033;
+  color: black;
+  text-shadow: 0 0 12px black;
 }

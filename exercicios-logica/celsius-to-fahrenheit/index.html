@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Celsius para Fahrenheit</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
- 
-    <h2>Conversor de Temperatura</h2>
-    <p>Digite a temperatura em Celsius para converter para Fahrenheit.</p>
- 
-    <form action="./celsius.php" method="get">
-        <label for="celsius">Temperatura em Celsius:</label>
-        <input type="text" id="celsius" name="celsius">
-        <button type="submit">Converter</button>
-    </form>
- 
+
+    <div class="container">
+        <header>
+            <h2>Conversor de Temperatura</h2>
+            <p>Celsius para Fahrenheit</p>
+        </header>
+
+        <form action="./pages/celsius.php" method="get">
+            <label for="celsius">Temperatura em Celsius:</label>
+            <input type="text" id="celsius" name="celsius" placeholder="Ex: 25" required>
+            <button type="submit">Converter</button>
+        </form>
+    </div>
+
 </body>
 </html>
