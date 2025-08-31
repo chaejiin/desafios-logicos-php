@@ -1,12 +1,20 @@
 # 📌 Primeira Jornada Gamificada em PHP
 
-| <img src="./php.png" width="300"/> | Nesse repositório você vai encontrar uma **missão de aprendizagem em PHP**, com foco em:  
-- Conhecimentos básicos de **HTML** (principalmente formulários).  
-- Exercícios de **lógica de programação**.  
-
-O objetivo é entender como funcionam os formulários de um website e como as informações enviadas por eles chegam até o servidor. |  
-
-| --- | --- |
+<table>
+  <tr>
+    <td valign="top" width="320">
+      <img src="./php.png" width="300"/>
+    </td>
+    <td valign="top">
+      Nesse repositório você vai encontrar uma <strong>missão de aprendizagem em PHP</strong>, com foco em:
+      <ul>
+        <li>Conhecimentos básicos de <strong>HTML</strong> (principalmente formulários).</li>
+        <li>Exercícios de <strong>lógica de programação</strong>.</li>
+      </ul>
+      <p>O objetivo é entender como funcionam os formulários de um website e como as informações enviadas por eles chegam até o servidor.</p>
+    </td>
+  </tr>
+</table>
 
 
 ## ⚙️ Pré-requisitos  
