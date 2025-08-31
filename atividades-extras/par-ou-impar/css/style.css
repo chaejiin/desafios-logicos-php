@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 * {
   margin: 0;
@@ -7,131 +7,122 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(135deg, #3c3b3f 0%, #605c3c 100%);
+  font-family: 'Nunito', sans-serif; 
+  background: linear-gradient(135deg, #318274 50%, #45b3a3 50%);
+  color: #3d4f65;  
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+
 main {
-  background: #fff;
-  max-width: 360px;
+  position: relative;
+  background: #ffffff;
   width: 100%;
-  padding: 45px 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25),
-    0 6px 10px rgba(0, 0, 0, 0.22);
+  max-width: 420px;
+  padding: 60px 40px 40px 40px; 
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1.5rem;
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 54px;
+  height: 10px;
+  background: radial-gradient(circle at 5px 5px, #fddc5e 5px, transparent 5px),
+              radial-gradient(circle at 27px 5px, #93ed5a 5px, transparent 5px),
+              radial-gradient(circle at 49px 5px, #ff605c 5px, transparent 5px);
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  width: calc(100% - 40px);
 }
 
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #3d4f65;
+  margin-bottom: 2rem;
+}
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
-
 
 label {
-  font-size: 0.9rem;
-  text-align: left;
-  color: #444;
-  font-weight: 500;
-  margin-bottom: -10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5a6f8a;
 }
 
-
-input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  padding: 14px;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: all 0.3s ease;
+input[type="number"] {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background: #f7f9fc;
+  border: 2px solid #e6e9f0;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input:focus {
-  background: #eaeaea;
-  border: 1px solid #4CAF50;
+input[type="number"]:focus {
+  border-color: #45b3a3;
+  box-shadow: 0 0 0 3px rgba(69, 179, 163, 0.2);
 }
 
-
-button {
-  font-family: "Roboto", sans-serif;
+button, .back-link {
+  font-family: 'Nunito', sans-serif;
+  background-color: #45b3a3;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 14px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 8px;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(69, 179, 163, 0.3);
+  text-decoration: none;
+  display: block;
 }
 
-button:hover,
-button:focus {
-  background: #43A047;
-  transform: scale(1.02);
+button:hover, .back-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(69, 179, 163, 0.4);
 }
-
-
 
 .resultado {
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 25px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  border: 1px solid;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 2px solid;
 }
 
 .resultado.sucesso {
-  background-color: #f1f8e9;
-  color: #43A047;
-  border-color: #4CAF50;
+  background-color: #f0fffb;
+  color: #008a73;
+  border-color: #45b3a3;
 }
 
 .resultado.erro {
-  background-color: #ffebee;
-  color: #c62828;
-  border-color: #d32f2f;
-}
-
-.back-link {
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  background: #6c757d;
-  width: 100%;
-  border: 0;
-  padding: 14px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.back-link:hover {
-  background: #5a6268;
+  background-color: #fff0f0;
+  color: #d9534f;
+  border-color: #d9534f;
 }
