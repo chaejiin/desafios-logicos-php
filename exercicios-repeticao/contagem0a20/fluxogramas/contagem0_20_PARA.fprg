@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contagem0-20-para"/>
+        <attribute name="authors" value="leandro.ccassano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-01 02:29:56 "/>
+        <attribute name="created" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOS0wMTsiMDI6MTI6NDUgIjszNjg1"/>
+        <attribute name="edited" value="bGVhbmRyby5jY2Fzc2FubztTQU4wNzE3NDcwVzExLTE7MjAyNS0wOS0wMTsiMDI6Mjk6NTYgIjsxOzM4MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <for variable="contador" start="0" end="20" direction="inc" step="2">
+                <output expression="contador" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
