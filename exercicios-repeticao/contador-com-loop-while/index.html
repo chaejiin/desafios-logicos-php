@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador com PHP</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Contador Personalizado</h1>
+
+        <form action="contagem.php" method="GET">
+            <label for="inicio">Início da Contagem</label>
+            <input type="number" id="inicio" name="inicio" required>
+
+            <label for="final">Final da Contagem</label>
+            <input type="number" id="final" name="final" required>
+
+            <label for="passo">Passo (incremento)</label>
+            <input type="number" id="passo" name="passo" required>
+
+            <button type="submit">Contar</button>
+        </form>
+
+    </main>
+</body>
+</html>

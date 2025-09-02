@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gemini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 04:20:53 PM"/>
+        <attribute name="created" value="R2VtaW5pOzIwMjUtMDktMDI7MDQ6MTc6NTYgUE07MTs0NDc5"/>
+        <attribute name="edited" value="R2VtaW5pOzIwMjUtMDktMDI7MDQ6MjA6NTMgUE07MTs0NTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicio, fim, passo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero inicial da contagem:&quot;" newline="True"/>
+            <input variable="inicio"/>
+            <output expression="&quot;Digite o n&#250;mero final da contagem:&quot;" newline="True"/>
+            <input variable="fim"/>
+            <output expression="&quot;Digite o tamanho do passo (incremento):&quot;" newline="True"/>
+            <input variable="passo"/>
+            <if expression="passo &lt;= 0">
+                <then>
+                    <output expression="&quot;O passo deve ser um n&#250;mero positivo maior que zero.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <declare name="contador" type="Integer" array="False" size=""/>
+                    <assign variable="contador" expression="inicio"/>
+                    <if expression="inicio &lt;= fim">
+                        <then>
+                            <output expression="contador &amp; &quot; - IN&#205;CIO&quot;" newline="True"/>
+                            <assign variable="contador" expression="contador + passo"/>
+                            <while expression="contador &lt;= fim">
+                                <if expression="contador + passo &gt; fim">
+                                    <then>
+                                        <output expression="contador &amp; &quot; - FIM&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="contador" newline="True"/>
+                                    </else>
+                                </if>
+                                <assign variable="contador" expression="contador + passo"/>
+                            </while>
+                        </then>
+                        <else>
+                            <output expression="&quot;O valor inicial deve ser menor ou igual ao valor final.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
